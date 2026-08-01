@@ -45,7 +45,7 @@ export default function Contact() {
             </Link>
             <Link href="#contact-lead-form" className="btn-outline">
               <CalendarCheck className="h-4 w-4" aria-hidden="true" />
-              {t.bookConsultation[lang]}
+              {uiStrings.common.enquireNow[lang]}
             </Link>
           </div>
 

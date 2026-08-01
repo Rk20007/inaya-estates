@@ -2,9 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ShieldCheck, MessageCircle, Building2, CalendarCheck, Phone, ArrowRight } from "lucide-react";
+import { ShieldCheck, Building2, CalendarCheck, ArrowRight } from "lucide-react";
 import LeadForm from "@/components/ui/LeadForm";
-import { siteConfig } from "@/lib/seo";
 import { useLanguage } from "@/lib/i18n/LanguageContext";
 import { uiStrings } from "@/lib/i18n/uiStrings";
 
@@ -78,25 +77,6 @@ export default function Hero() {
             <Link href="#hero-lead-form" className="inline-flex items-center gap-2 text-sm font-semibold text-white/85 hover:text-accent">
               <CalendarCheck className="h-4 w-4" aria-hidden="true" />
               {t.bookFreeConsultation[lang]}
-            </Link>
-          </div>
-
-          <div className="mt-5 flex flex-wrap items-center gap-5">
-            <Link
-              href={`tel:${siteConfig.phone}`}
-              className="inline-flex items-center gap-2 text-sm font-semibold text-white/85 hover:text-accent"
-            >
-              <Phone className="h-4 w-4" aria-hidden="true" />
-              {uiStrings.common.callNow[lang]}
-            </Link>
-            <Link
-              href={`https://wa.me/${siteConfig.whatsapp}?text=Hi%2C%20I%27m%20interested%20in%20land%20opportunities%20with%20Inaya%20Estates`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-white/85 hover:text-accent"
-            >
-              <MessageCircle className="h-4 w-4" aria-hidden="true" />
-              {uiStrings.common.whatsappUs[lang]}
             </Link>
           </div>
 

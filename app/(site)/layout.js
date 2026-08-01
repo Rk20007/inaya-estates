@@ -2,6 +2,7 @@ import { getRealEstateAgentSchema, getWebsiteSchema } from "@/lib/schema";
 import JsonLd from "@/components/schema/JsonLd";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import GroupAffiliationBar from "@/components/layout/GroupAffiliationBar";
 import WhatsAppButton from "@/components/layout/WhatsAppButton";
 import CallButton from "@/components/layout/CallButton";
 import StickyMobileCTA from "@/components/layout/StickyMobileCTA";
@@ -25,6 +26,7 @@ export default function SiteLayout({ children }) {
         <main id="main-content" className="flex-1 pb-20 lg:pb-0">
           {children}
         </main>
+        <GroupAffiliationBar />
         <Footer />
         <WhatsAppButton />
         <CallButton />
