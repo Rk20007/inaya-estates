@@ -99,8 +99,7 @@ export default function MetaLeadsPage() {
           <div>
             <h1 className="font-display text-2xl font-bold text-ink-900">Meta Leads</h1>
             <p className="mt-1 text-sm text-ink-500">
-              Leads captured from your Facebook &amp; Instagram lead ads. Synced automatically every 5
-              minutes, or refresh manually below.
+              Leads captured from your Facebook &amp; Instagram lead ads. Click refresh to pull the latest.
             </p>
           </div>
           <button
