@@ -10,12 +10,12 @@ function isToday(dateString) {
   );
 }
 
-export default function StatsGrid({ leads }) {
+export default function StatsGrid({ leads, dateField = "createdAt" }) {
   const stats = [
     { label: "Total Leads", value: leads.length, icon: Users, color: "text-primary bg-primary/10" },
     {
       label: "Today's Leads",
-      value: leads.filter((lead) => isToday(lead.createdAt)).length,
+      value: leads.filter((lead) => isToday(lead[dateField])).length,
       icon: CalendarDays,
       color: "text-secondary bg-secondary/10",
     },
